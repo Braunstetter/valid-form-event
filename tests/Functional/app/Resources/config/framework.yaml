@@ -1,0 +1,5 @@
+framework:
+  default_locale: 'en'
+  validation:
+    enabled: true
+    email_validation_mode: html5

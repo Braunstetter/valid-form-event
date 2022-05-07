@@ -1,0 +1,28 @@
+{
+  "name": "braunstetter/valid-form-event",
+  "description": "Fires an event whenever a root form is submitted and valid. So child forms can react and do stuff afterwards.",
+  "type": "symfony-bundle",
+  "keywords": ["form", "form-event", "event"],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "symfony/framework-bundle": "^4.4|^5.0|^6.0",
+    "symfony/form": "^6"
+  },
+  "require-dev": {
+    "symfony/test-pack": "^1.0",
+    "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+    "nyholm/symfony-bundle-test": "1.8.1",
+    "symfony/validator": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Braunstetter\\ValidFormEvent\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Braunstetter\\ValidFormEvent\\Tests\\": "tests"
+    }
+  }
+}

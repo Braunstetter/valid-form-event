@@ -1,0 +1,26 @@
+parameters:
+  kernel.secret: "for_framework_bundle"
+  locale: "en"
+
+imports:
+  - { resource: framework.yaml }
+
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    public: true
+
+  Braunstetter\ValidFormEvent\Tests\Functional\app\src\Provider\FormProvider: null
+
+  form.type_extension.form.validator:
+    class: Symfony\Component\Form\Extension\Validator\Type\FormTypeValidatorExtension
+    arguments:
+      - '@validator'
+      - false
+      - null
+      - null
+    tags:
+      - { name: 'form.type_extension', extended-type: Symfony\Component\Form\Extension\Core\Type\FormType }
+
