@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1651996540">
+  <project timestamp="1651996540">
+    <file name="/Users/michaelbrauner/Bundles/Symfony/ValidFormEventBundle/Bundle/src/DependencyInjection/ValidFormEventBundleExtension.php">
+      <class name="Braunstetter\ValidFormEvent\DependencyInjection\ValidFormEventBundleExtension" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="16" type="method" name="load" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <metrics loc="21" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/Users/michaelbrauner/Bundles/Symfony/ValidFormEventBundle/Bundle/src/Form/Event/ValidFormEvent.php">
+      <class name="Braunstetter\ValidFormEvent\Form\Event\ValidFormEvent" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="16" type="stmt" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="23" type="method" name="getCurrentForm" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <metrics loc="28" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/Users/michaelbrauner/Bundles/Symfony/ValidFormEventBundle/Bundle/src/Form/EventSubscriber/PropagateValidFormEventSubscriber.php">
+      <class name="Braunstetter\ValidFormEvent\Form\EventSubscriber\PropagateValidFormEventSubscriber" namespace="global">
+        <metrics complexity="6" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </class>
+      <line num="17" type="method" name="getSubscribedEvents" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="20" type="stmt" count="2"/>
+      <line num="24" type="method" name="onFormValid" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="31" type="method" name="dispatchOnChildren" visibility="private" complexity="3" crap="3" count="2"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="40" type="stmt" count="2"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <metrics loc="46" ncloc="42" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+    </file>
+    <file name="/Users/michaelbrauner/Bundles/Symfony/ValidFormEventBundle/Bundle/src/Form/Extension/ValidFormEventTypeExtension.php">
+      <class name="Braunstetter\ValidFormEvent\Form\Extension\ValidFormEventTypeExtension" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+      </class>
+      <line num="15" type="method" name="buildForm" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="19" type="stmt" count="2"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="34" type="method" name="getExtendedTypes" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="37" type="stmt" count="2"/>
+      <metrics loc="39" ncloc="36" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/Users/michaelbrauner/Bundles/Symfony/ValidFormEventBundle/Bundle/src/ValidFormEventBundle.php">
+      <class name="Braunstetter\ValidFormEvent\ValidFormEventBundle" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="11" type="method" name="getContainerExtension" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <metrics files="5" loc="150" ncloc="136" classes="5" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="31" coveredelements="31"/>
+  </project>
+</coverage>
