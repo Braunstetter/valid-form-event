@@ -60,8 +60,8 @@ class MyPageBlockType extends AbstractType
             ->addEventListener(ValidFormEvent::NAME, function (ValidFormEvent $event) {
                 $form = $event->getCurrentForm() ?? $event->getForm();
 
-                if ($imageEntity = $form->get('image')->getData()) {
-                    $this->filesystemManager->upload($imageEntity);
+                if ($image = $form->get('image')->getData()) {
+                    $this->filesystemManager->upload($image);
                 }
             });
 
@@ -79,7 +79,7 @@ class MyPageBlockType extends AbstractType
 
 That's pretty self-explanatory.
 
-Everything works exactly the same as with the other Symfony FormeEvents.
+Everything works exactly the same as with the other Symfony FormEvents.
 It should also be noted that the `$event->getCurrentForm()` method is also available. This gives you the current form you are in - but only if that form is a child of a parent form. The parent form can easily be reached with `$event->getForm()`.
 
 > This event works with all forms, even if they are nested.
