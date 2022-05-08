@@ -15,7 +15,7 @@ class ValidFormEventTypeExtension extends AbstractTypeExtension
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
 
-        $builder->addEventListener(FormEvents::POST_SUBMIT, function (FormEvent $event) {
+        $builder->addEventListener(FormEvents::POST_SUBMIT, function(FormEvent $event) {
             $form = $event->getForm();
 
             if ($form->isValid() && $form->isRoot()) {
@@ -28,12 +28,12 @@ class ValidFormEventTypeExtension extends AbstractTypeExtension
 
     }
 
-/**
- * @inheritDoc
- */
-public
-static function getExtendedTypes(): iterable
-{
-    return [FormType::class];
-}
+    /**
+     * @inheritDoc
+     */
+    public
+    static function getExtendedTypes(): iterable
+    {
+        return [FormType::class];
+    }
 }

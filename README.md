@@ -2,6 +2,9 @@
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Braunstetter/valid-form-event/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Braunstetter/valid-form-event/?branch=main)
 [![Code Coverage](https://scrutinizer-ci.com/g/Braunstetter/valid-form-event/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/Braunstetter/valid-form-event/?branch=main)
+[![Build Status](https://app.travis-ci.com/Braunstetter/valid-form-event.svg?branch=main)](https://app.travis-ci.com/Braunstetter/valid-form-event)
+[![Total Downloads](http://poser.pugx.org/braunstetter/valid-form-event/downloads)](https://packagist.org/packages/braunstetter/valid-form-event)
+[![License](http://poser.pugx.org/braunstetter/valid-form-event/license)](https://packagist.org/packages/braunstetter/valid-form-event)
 
 The Symfony documentation recommends keeping logic out of forms and instead doing everything inside a controller.
 That's probably good advice most of the time, but exceptions prove the rule.
